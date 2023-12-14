@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <title>THE DEV GUYS</title>
+  <script src="https://kit.fontawesome.com/99889ce3a7.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT US</a></li>
+      <li><a href="#expertise">OUR EXPERTISE</a></li>
+      <li><a href="#testimonials">TESTIMONIALS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="banner">
+      <img src="images/logo-black.png" class="logo" />
+      <img src="images/avg.png" class="white-logo" />
+      <div class="banner-text">
+        <p>BUILD YOUR SOLUTIONS WITH</p>
+        <h1>THE DEV GUYS</h1>
+      </div>
+    </section>
+    <main>
+      <section>
+        <div class="wrapper">
+          <div class="row">
+            <div class="image-section">
+              <img src="images/abb.jpg" alt="About Us Image" />
+            </div>
+            <div class="content">
+              <h2>ABOUT US</h2>
+              <h3>what we do</h3>
+              <p>
+                The Dev Guys is one of the prime companies in the market, and we
+                have been serving over 150+ happy clients. We have hosted desktop
+                applications in the cloud for over 100 clients. We created and
+                delivered over 30 quality and timely projects over the last 5 years
+                with satisfaction.
+              </p>
+            </div>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion(this)">Our Vision</div>
+                <div class="content">
+                  We are consistently driven by our vision - ‘Make things happen’.
+                  We are a motivated and inspired bunch working collectively to meet
+                  our client's requirements with our impeccable service.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-title" onclick="toggleAccordion(this)">Our Mission</div>
+                <div class="content">
+                  What sets us apart from our competition is that our team of
+                  experts and professionals always strive to achieve our mission and
+                  meet our client's expectations in the best way possible.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      function toggleAccordion(element) {
+        const content = element.nextElementSibling;
+        element.classList.toggle("active");
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+      }
+    </script>
+
+  <section>
+    <div class="footer">
+      <div class="row">
+        <div class="col">
+          <img src="images/logo-black.png" class="logo">
+          <img src="images/avg.png" class="white-logo">
+          <p>We support programs that create advancement opportunities for people.</p>
+        </div>
+        <div class="col">
+          <h3>Address <div class="underline"><span></span></div></h3>
+          <p>607 Neelkanth Corporate park,Vidyavihar West.</p>
+          <p class="email-id">ask@thedevguys.in</p>
+          <h4>87986451666</h4>
+        </div>
+        <div class="col">
+          <h3>Links <div class="underline"><span></span></div></h3>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">OUR EXPERTISE</a></li>
+            <li><a href="">TESTIMONIALS</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Newsletter <div class="underline"><span></span></div></h3>
+          <form>
+            <i class="far fa-envelope"></i>
+            <input type="email" placeholder="enter your email" required>
+            <button type="submit"><i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">The Devguys  © All Rights Reserved</p>
+    </div>
+  </section>
+</body>
+</html>
